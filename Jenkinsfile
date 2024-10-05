@@ -3,6 +3,7 @@ node {
         catchError(buildResult: 'SUCCESS') {
             sh 'docker stop getting-started'
             sh 'docker rm getting-started'
+            sh 'rm -rf getting-started' 
         }
     }
     stage('Build') {
