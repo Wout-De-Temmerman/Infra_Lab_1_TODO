@@ -1,8 +1,8 @@
 node {
     stage('Preparation') {
         catchError(buildResult: 'SUCCESS') {
-            sh 'docker stop getting-started'
-            sh 'docker rm getting-started'
+            sh 'docker stop TODO'
+            sh 'docker rm TODO'
             sh 'rm -rf getting-started' 
         }
     }
